@@ -5,7 +5,7 @@ import machuPicchu from '../imagenes/MACHUPICCHU.jpg';
 import yanahuara from '../imagenes/YANAHUARA.jpg';
 import catacaos from '../imagenes/CATACAOS.jpg';
 
-const CityImages = () => {
+function CityImages () {
   return (
     <div className="city-images">
       <div className="city-image large">
