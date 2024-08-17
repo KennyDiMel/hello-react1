@@ -1,4 +1,4 @@
-
+/* Menu */
 .menu ul {
     display: flex;
     list-style: none;
@@ -18,10 +18,68 @@
     background-color: #006400;
     font-weight: bold;
   }
-  
+
+/* Banner */
 .banner img {
     width: 100%;
     height: 300px;
     object-fit: cover;
   }
+
+
+/* CityImages */
+.city-images {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.city-image {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.city-image img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.city-image.large {
+  margin-top: 50px;
+  margin-left: 20px;
+  width: 60%;
+  height: 600px;
+}
+
+.small-images {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  justify-content: space-between;
+}
+
+.city-image.small {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.nombre-ciudad {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.city-image:hover {
+  transform: scale(1.1);
+}
+
   
