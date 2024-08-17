@@ -1,13 +1,15 @@
 import { Fragment } from "react";
 import Menu from "./componentes/Menu";
-import Banner from "./componentes/Banner"
-
+import Banner from "./componentes/Banner";
+import costaverde from "./imagenes/COSTAVERDE.jpg"
 function App (){
 
   return (
     <>
     <Menu/>
-    <Banner/>
+    <Banner
+      imagen = 'COSTA VERDE.jpg'
+    />
     </>    
   )
 }

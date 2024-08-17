@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import './Estilos.css';
-
-const images = [
-  'url-de-imagen1.jpg',
-  'url-de-imagen2.jpg',
-  'url-de-imagen3.jpg'
+import costaverde from './imagenes/COSTAVERDE.jpg'
+const imagenes = [
+  'COSTA VERDE.jpg',
+  'LAGO TITICACA.jpg',
+  'OXAPAMPA.jpg',
+  'LINEAS DE NAZCA.jpg',
+  'LAGUNA HUAMANTAY.jpg' 
 ];
 
 function Banner () {
@@ -12,7 +14,7 @@ function Banner () {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % imagenes.length);
     }, 1000);
 
     return () => clearInterval(interval);
@@ -20,7 +22,7 @@ function Banner () {
 
   return (
     <div className="banner">
-      <img src={images[currentImageIndex]} alt="Banner" />
+      <img src={imagenes[currentImageIndex]} alt="Banner" />
     </div>
   );
 };
