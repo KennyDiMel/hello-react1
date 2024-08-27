@@ -68,40 +68,6 @@
   margin-top: 100px;
 }
 
-.titleForm{
-  font-size: 20px;
-  color: rgb(225, 42, 225);
-  padding-bottom: 20px;
-  font-weight: bold;
-}
-
-.fondo{
-  display: flex;
-  gap: 50px;
-}
-
-.imgHW{
-  max-width: 500px;
-  border-radius: 20px;
-  margin-top: 70px;
-}
-
-.w-b{
-  font-weight: bold;
-}
-
-.form-group{
-  text-align: left;
-  padding: 10px;
-}
-
-.btn{
-  width: 100px;
-  margin: 20px;
-  background-color: rgb(225, 42, 225) !important;
-  border-color:rgb(225, 42, 225) !important;
-  text-align: left;
-}
 
 
 /* :::::::::::::Footer::::::::::::: */
