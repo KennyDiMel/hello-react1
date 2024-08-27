@@ -1,9 +1,9 @@
 import React from "react";
 import { FaFacebook } from "react-icons/fa";
-import { FaInstagramSquare } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
 
-import iconImg from '../imagenes/logo_mueble.jpg'
+import iconImg from '../imagenes/logomueble.jpg'
 
 
 const Cabecera = () => {
@@ -14,6 +14,7 @@ const Cabecera = () => {
             <li>
               <a href="">
                   <img src={iconImg} alt="" className="iconImg"/>
+                  <p className="titulo">MueblesFAST</p>
               </a>
             </li>
           </ul>
@@ -23,7 +24,7 @@ const Cabecera = () => {
                     <FaFacebook />
                 </a>
                 <a href="" className="redes">
-                    <FaInstagramSquare />
+                    <FaInstagram />
                 </a>
                 <a href="" className="redes">
                     <FaYoutube />

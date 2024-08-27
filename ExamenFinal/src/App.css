@@ -11,13 +11,19 @@
 
 /* :::::::::::Cabecera:::::::::::::::: */
 .iconImg{
-  height: 150px;
+  height: 50px;
+  border-radius: 5px;
 }
 
+.titulo{
+  display: inline;
+}
 .nav{
   display: flex;
   justify-content: space-between;
   z-index: 999;
+  border-bottom: 4px solid #e29d1c;
+  background-color: aqua;
 }
 
 .nav ul{
@@ -31,11 +37,16 @@
   padding: 20px;
 }
 
-/* ::::::::::::Header:::::::::::::::: */
+/* ::::::::::::Banner:::::::::::::::: */
 
-#paisaje{
+.container{
   width: 100%;
-  height: 80vh;
+  margin-top: 20px;
+}
+
+#imagenes{
+  width: 100%;
+  height: 500px;
 }
 
 
@@ -99,11 +110,6 @@
   height: 80px;
 }
 
-
-.bg-yellow{
-  background-color: rgb(255, 255, 0) !important;
-}
-.bg-pink{
-  background-color: rgb(225, 42, 225) !important;
-  height: 30px;
+.bg-orange{
+  background-color: #c95f21;
 }

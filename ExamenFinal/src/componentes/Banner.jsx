@@ -1,13 +1,13 @@
 import { useEffect, useState } from 'react';
 
 
-import img0 from '../assets/images/imagen1.jpg';
-import img1 from '../assets/images/imagen2.jpg';
-import img2 from '../assets/images/imagen3.jpg';
+import img1 from '../imagenes/img01.jpg';
+import img2 from '../imagenes/img02.jpg';
+import img3 from '../imagenes/img03.jpg';
 
 
 
-const turismo = [img0, img1, img2];
+const muebleria = [img1, img2, img3];
 
 
 const Banner = () => {
@@ -15,7 +15,7 @@ const Banner = () => {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setC((prevC) => (prevC + 1) % turismo.length);
+      setC((prevC) => (prevC + 1) % muebleria.length);
     }, 3000);
 
     return () => clearInterval(interval);
@@ -24,8 +24,8 @@ const Banner = () => {
 
   return (
     <div id="center">
-      <header className='container banner'>
-        <img id="paisaje" src={turismo[c]} alt={`Paisaje ${c}`}  className=' border20'/>
+      <header className='container header'>
+        <img id="imagenes" src={muebleria[c]} alt={`Muebles ${c}`}  className=' border20'/>
       </header>
     </div>
   );

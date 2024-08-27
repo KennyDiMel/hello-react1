@@ -1,6 +1,8 @@
 import React from 'react';
 import './App.css';
 import Cabecera from './componentes/Cabecera';
+import Banner from './componentes/Banner'
+import Footer from './componentes/Footer';
 
 function App() {
 
@@ -8,11 +10,10 @@ function App() {
   return (
     <>
       <Cabecera/>
-      <Nav/>
-      <Formulario/>
+      <Banner/>
       <Footer/>
     </>
   )
 }
 
-export default App
+export default App;
